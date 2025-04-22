@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shahan K Rahiman - Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
+      color: #e0e0e0;
+      padding: 2rem;
+      display: flex;
+      justify-content: center;
+      min-height: 100vh;
+    }
+
+    .container {
+      max-width: 1000px;
+      width: 100%;
+      background: rgba(20, 20, 20, 0.9);
+      backdrop-filter: blur(12px);
+      padding: 2rem;
+      border-radius: 16px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      position: relative;
+      box-shadow: 0 0 30px rgba(0, 255, 100, 0.05);
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: #00ff88;
+    }
+
+    header h2 {
+      margin-top: 1rem;
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: #e0e0e0;
+    }
+
+    header p {
+      font-size: 1rem;
+      color: #aaa;
+      margin-top: 1rem;
+      line-height: 1.6;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .project-card {
+      background-color: #1e1e1e;
+      border-radius: 12px;
+      padding: 1.5rem;
+      box-shadow: 0 4px 20px rgba(0, 255, 100, 0.1);
+      transition: transform 0.2s ease, box-shadow 0.3s ease;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 25px rgba(0, 255, 100, 0.3);
+    }
+
+    .project-card h3 {
+      font-size: 1.25rem;
+      color: #00ff88;
+      margin-bottom: 0.5rem;
+    }
+
+    .project-card p {
+      font-size: 0.95rem;
+      color: #ccc;
+      flex-grow: 1;
+    }
+
+    .project-card a {
+      margin-top: 1rem;
+      color: #00ff88;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .project-card a:hover {
+      text-decoration: underline;
+    }
+
+    .footer-note {
+      font-size: 0.8rem;
+      color: #666;
+      text-align: center;
+    }
+
+    .social-icons {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      display: flex;
+      gap: 1rem;
+    }
+
+    .social-icons a {
+      color: #ccc;
+      font-size: 1.4rem;
+      transition: color 0.2s, transform 0.2s;
+    }
+
+    .social-icons a:hover {
+      color: #00ff88;
+      transform: scale(1.1);
+    }
+    
+    .resume-btn {
+  background-color: #00ff88;
+  color: #0f0f0f;
+  font-weight: 700;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  font-size: 0.95rem;
+  margin-top: 1rem;
+}
+
+.resume-btn:hover {
+  background-color: #00cc6a;
+  transform: scale(1.05);
+}
+
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="social-icons">
+      <a href="https://www.linkedin.com/in/shahan-k-rahiman-445834251/" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/SHAHAN873" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://www.instagram.com/hashtagnoooooo/" target="_blank"><i class="fab fa-instagram"></i></a>
+    </div>
+
+    <header>
+      <h1>Hello there, I'm Shahan K Rahiman</h1>
+      <h2>About me</h2>
+      <p>I come with an unwavering passion for crafting and playing games. Influenced by the charm and cleverness of classic titles, I aim to design mechanics that feel fast, fluid, and fully within the player's control.</p>
+      <p>Games are canvases, and I strive to paint them with rich visuals through shader magic—balancing gorgeous graphics with engaging gameplay. I’m someone who breaks boundaries, learns what matters, and draws inspiration from anime and VFX breakdowns. Let’s build stunning experiences together.</p>
+    </header>
+
+    <section class="projects">
+      <div class="project-card">
+        <h3>Quake-Based FPS Movement System</h3>
+        <p>A controller built to replicate the responsive movement found in classic Quake titles using Unity's CharacterController.</p>
+        <a href="https://github.com/SHAHAN873/FPS-Controller-Quake-Based-" target="_blank">Learn more → (Github Page)</a>
+      </div>
+      <div class="project-card">
+        <h3>Vertex Displacement Shader (Texture Based)</h3>
+        <p>This is a vertex Displacement Shader made in Unity using HLSL Unlit shader. The Shader changes the vertices of the shape based on the texture given by the user.</p>
+        <a href="https://github.com/SHAHAN873/Texture-based-Vertex-Displacement-Shader" target="_blank">Learn more → (Github Page)</a>
+      </div>
+      <div class="project-card">
+        <h3>Unity Dissolve Shader</h3>
+        <p>A dissolve shader made using unity with interface control for the amount of dissolve, the colour of dissolving edges etc.</p>
+        <a href="https://github.com/SHAHAN873/Unity-Dissolve-Shader-" target="_blank">Learn more → (Github Page)</a>
+      </div>
+      <div class="project-card">
+        <h3>Unity Toon Shader</h3>
+        <p>This is simple toon shader made using unlit shader in unity which also casts shadows</p>
+        <a href="https://github.com/SHAHAN873/HLSL-Unity-Toon-Shader">Learn more → (Github Page)</a>
+      </div>
+    </section>
+
+    <p class="footer-note">
+      * A very passionate and competent person open to freelance offers and internships.<br>
+      <a href="Shahan K Rahiman_CV.pdf" download>
+        <button class="resume-btn">Resume</button>
+      </a>      
+    </p>
+  </div>
+</body>
+</html>
