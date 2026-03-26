@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Shahan K Rahiman | Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&family=Plus+Jakarta+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&family=Plus+Jakarta+Sans:wght@300;400;600&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
     :root {
@@ -14,7 +17,11 @@
       --subtle: #6D6D6D;
     }
 
-    * { margin: 0; padding: 0; box-sizing: border-box; }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
     body {
       font-family: 'Plus Jakarta Sans', sans-serif;
@@ -24,7 +31,10 @@
       padding: 4rem 2rem;
     }
 
-    .container { max-width: 1100px; margin: 0 auto; }
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
 
     /* Top Navigation Bar */
     .top-bar {
@@ -41,7 +51,9 @@
       color: var(--accent);
     }
 
-    header { margin-bottom: 5rem; }
+    header {
+      margin-bottom: 5rem;
+    }
 
     header h1 {
       font-family: 'Playfair Display', serif;
@@ -58,11 +70,27 @@
       gap: 4rem;
     }
 
-    .about-text { font-size: 1.1rem; color: var(--text); }
-    
-    .social-links { display: flex; gap: 1.5rem; margin-top: 2rem; }
-    .social-links a { color: var(--accent); font-size: 1.2rem; transition: 0.3s; }
-    .social-links a:hover { opacity: 0.5; transform: translateY(-2px); }
+    .about-text {
+      font-size: 1.1rem;
+      color: var(--text);
+    }
+
+    .social-links {
+      display: flex;
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .social-links a {
+      color: var(--accent);
+      font-size: 1.2rem;
+      transition: 0.3s;
+    }
+
+    .social-links a:hover {
+      opacity: 0.5;
+      transform: translateY(-2px);
+    }
 
     .section-label {
       font-family: 'Plus Jakarta Sans', sans-serif;
@@ -76,7 +104,9 @@
     }
 
     /* Project List */
-    .projects { margin-bottom: 6rem; }
+    .projects {
+      margin-bottom: 6rem;
+    }
 
     .project-row {
       display: grid;
@@ -89,10 +119,27 @@
       transition: background 0.3s ease;
     }
 
-    .project-row:hover { background: rgba(139, 0, 0, 0.03); }
-    .project-row h3 { font-family: 'Playfair Display', serif; font-size: 1.5rem; color: var(--accent); }
-    .project-row p { font-size: 0.9rem; color: var(--subtle); padding: 0 1rem; }
-    .project-row .link-arrow { text-align: right; color: var(--accent); font-weight: bold; }
+    .project-row:hover {
+      background: rgba(139, 0, 0, 0.03);
+    }
+
+    .project-row h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5rem;
+      color: var(--accent);
+    }
+
+    .project-row p {
+      font-size: 0.9rem;
+      color: var(--subtle);
+      padding: 0 1rem;
+    }
+
+    .project-row .link-arrow {
+      text-align: right;
+      color: var(--accent);
+      font-weight: bold;
+    }
 
     /* Visual Gallery */
     .gallery-grid {
@@ -106,7 +153,8 @@
       position: relative;
       overflow: hidden;
       aspect-ratio: 4/5;
-      background: #e6ded6; /* Placeholder color */
+      background: #e6ded6;
+      /* Placeholder color */
     }
 
     .gallery-item img {
@@ -127,17 +175,24 @@
       bottom: 0;
       left: 0;
       padding: 1.5rem;
-      background: linear-gradient(transparent, rgba(0,0,0,0.7));
+      background: linear-gradient(transparent, rgba(0, 0, 0, 0.7));
       color: white;
       width: 100%;
       opacity: 0;
       transition: 0.3s;
     }
 
-    .gallery-item:hover .gallery-caption { opacity: 1; }
+    .gallery-item:hover .gallery-caption {
+      opacity: 1;
+    }
 
     /* Footer */
-    .footer-section { text-align: center; padding: 4rem 0; border-top: 1px solid var(--accent); }
+    .footer-section {
+      text-align: center;
+      padding: 4rem 0;
+      border-top: 1px solid var(--accent);
+    }
+
     .resume-btn {
       background-color: var(--accent);
       color: var(--bg);
@@ -149,13 +204,29 @@
       letter-spacing: 2px;
       transition: 0.3s;
     }
-    .resume-btn:hover { background-color: var(--text); transform: scale(1.05); }
+
+    .resume-btn:hover {
+      background-color: var(--text);
+      transform: scale(1.05);
+    }
 
     @media (max-width: 768px) {
-      .intro-grid { grid-template-columns: 1fr; }
-      .project-row { grid-template-columns: 1fr 1fr; gap: 1rem; }
-      .project-row p { display: none; }
-      header h1 { font-size: 4rem; }
+      .intro-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .project-row {
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+      }
+
+      .project-row p {
+        display: none;
+      }
+
+      header h1 {
+        font-size: 4rem;
+      }
     }
 
     /* Modal / Lightbox */
@@ -173,17 +244,20 @@
       opacity: 0;
       transition: opacity 0.3s ease;
     }
+
     .modal.show {
       display: flex;
       opacity: 1;
     }
+
     .modal img {
       max-width: 90%;
       max-height: 90%;
-      box-shadow: 0 0 20px rgba(0,0,0,0.5);
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
       border-radius: 4px;
       user-select: none;
     }
+
     .modal-close {
       position: absolute;
       top: 20px;
@@ -194,20 +268,21 @@
       cursor: pointer;
       transition: 0.3s;
     }
+
     .modal-close:hover {
       color: var(--accent);
     }
   </style>
 </head>
+
 <body>
 
   <div class="container">
     <nav class="top-bar">
       <span>✦ Technical Art</span>
-      <span>✦ Blender</span>
-      <span>✦ Unreal Engine 5</span>
-      <span>✦ Visualization</span>
-      <span>✦ Animation</span>
+      <span>✦ HLSL Shaders</span>
+      <span>✦ Unity Engine</span>
+      <span>✦ Gameplay Systems</span>
     </nav>
 
     <header>
@@ -215,9 +290,11 @@
       <h1>Shahan K.<br>Rahiman</h1>
       <div class="intro-grid">
         <div class="about-text">
-          <p>I build experiences where high-end visuals meet precise mechanics. From Quake-inspired gameplay, Modern minimalist Residencies to Luxury Colonial Residencies, my work focuses on the intersection of performance and aesthetic beauty.</p>
+          <p>I build experiences where high-end visuals meet precise mechanics. From Quake-inspired movement to custom
+            HLSL shaders, my work focuses on the intersection of performance and aesthetic beauty.</p>
           <div class="social-links">
-            <a href="https://www.linkedin.com/in/shahan-k-rahiman-445834251/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.linkedin.com/in/shahan-k-rahiman-445834251/" target="_blank"><i
+                class="fab fa-linkedin"></i></a>
             <a href="https://github.com/SHAHAN873" target="_blank"><i class="fab fa-github"></i></a>
             <a href="https://www.instagram.com/hashtagnoooooo/" target="_blank"><i class="fab fa-instagram"></i></a>
           </div>
@@ -233,7 +310,8 @@
         <p>Responsive CharacterController with air-strafing logic.</p>
         <span class="link-arrow">GITHUB ↗</span>
       </a>
-      <a href="https://github.com/SHAHAN873/Texture-based-Vertex-Displacement-Shader" class="project-row" target="_blank">
+      <a href="https://github.com/SHAHAN873/Texture-based-Vertex-Displacement-Shader" class="project-row"
+        target="_blank">
         <h3>Vertex Shader</h3>
         <p>Dynamic HLSL mesh displacement via texture data.</p>
         <span class="link-arrow">GITHUB ↗</span>
@@ -251,55 +329,66 @@
       <!-- Item 1 -->
       <div class="gallery-item">
         <img src="images/Render.png" alt="Toon Shader Preview">
-        <div class="gallery-caption">Luxury Colonial Architecture</div>
+        <div class="gallery-caption">Toon Shader & Shadow Ramp</div>
       </div>
       <!-- Item 2 -->
       <div class="gallery-item">
         <img src="images/Render 2.png" alt="Vertex Displacement Preview">
-        <div class="gallery-caption">Luxury Colonial Architecture</div>
+        <div class="gallery-caption">Vertex Displacement in Motion</div>
       </div>
       <!-- Item 3 -->
       <div class="gallery-item">
         <img src="images/Render 3.png" alt="Dissolve Preview">
-        <div class="gallery-caption">Luxury Colonial Architecture</div>
+        <div class="gallery-caption">Procedural Dissolve FX</div>
       </div>
       <!-- Item 4 -->
       <div class="gallery-item">
         <img src="images/Render 3_1.png" alt="Gameplay Movement Preview">
-        <div class="gallery-caption">European Style Building</div>
+        <div class="gallery-caption">Fluid Movement Systems</div>
       </div>
-    <!-- Item 5 -->
+      <!-- Item 5 -->
       <div class="gallery-item">
         <img src="images/Render 3_2.png" alt="Gameplay Movement Preview">
-        <div class="gallery-caption">European Style Building</div>
+        <div class="gallery-caption">Fluid Movement Systems</div>
       </div>
-    <!-- Item 6 -->
+      <!-- Item 6 -->
       <div class="gallery-item">
         <img src="images/Render 3_3.png" alt="Gameplay Movement Preview">
-        <div class="gallery-caption">European Style Building</div>
+        <div class="gallery-caption">Fluid Movement Systems</div>
       </div>
-    <!-- Item 7 -->
+      <!-- Item 7 -->
       <div class="gallery-item">
         <img src="images/Result 1.png" alt="Gameplay Movement Preview">
-        <div class="gallery-caption">Modern Minimalist Interior</div>
+        <div class="gallery-caption">Fluid Movement Systems</div>
       </div>
-     <!-- Item 8 -->
+      <!-- Item 8 -->
       <div class="gallery-item">
         <img src="images/Result 2.png" alt="Gameplay Movement Preview">
-        <div class="gallery-caption">Modern Minimalist Interior</div>
+        <div class="gallery-caption">Fluid Movement Systems</div>
       </div>
-     <!-- Item 8 -->
+      <!-- Item 8 -->
       <div class="gallery-item">
         <img src="images/Untitled.png" alt="Gameplay Movement Preview">
-        <div class="gallery-caption">Luxury Colonial Interior</div>
+        <div class="gallery-caption">Fluid Movement Systems</div>
+      </div>
+      <!-- Item 9 -->
+      <div class="gallery-item">
+        <img src="images/Render A2_1 .png" alt="Gameplay Movement Preview">
+        <div class="gallery-caption">Modern Minimalist Residency</div>
+      </div>
+      <!-- Item 10 -->
+      <div class="gallery-item">
+        <img src="images/Render A2_2 .png" alt="Gameplay Movement Preview">
+        <div class="gallery-caption">Modern Minimalist Residency</div>
       </div>
     </section>
-      
+
     <div class="footer-section">
       <a href="Shahan K Rahiman CV.pdf" download style="text-decoration: none;">
         <button class="resume-btn">Download Resume</button>
       </a>
-      <p style="margin-top: 2rem; font-size: 0.8rem; color: var(--subtle); letter-spacing: 1px;">Currently open to freelance and internship opportunities.</p>
+      <p style="margin-top: 2rem; font-size: 0.8rem; color: var(--subtle); letter-spacing: 1px;">Currently open to
+        freelance and internship opportunities.</p>
     </div>
   </div>
 
@@ -317,7 +406,7 @@
 
     galleryItems.forEach(img => {
       img.style.cursor = "pointer";
-      img.addEventListener("click", function() {
+      img.addEventListener("click", function () {
         modal.style.display = "flex";
         // Small delay to allow CSS transition to trigger correctly
         setTimeout(() => {
@@ -335,11 +424,12 @@
     }
 
     closeModal.addEventListener("click", closeImageModal);
-    modal.addEventListener("click", function(e) {
+    modal.addEventListener("click", function (e) {
       if (e.target !== modalImg) {
         closeImageModal();
       }
     });
   </script>
 </body>
+
 </html>
