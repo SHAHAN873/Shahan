@@ -211,12 +211,23 @@
     }
 
     @media (max-width: 768px) {
+      body {
+        padding: 2rem 1.5rem;
+      }
+
+      .top-bar {
+        flex-wrap: wrap;
+        gap: 0.8rem;
+        margin-bottom: 2rem;
+      }
+
       .intro-grid {
         grid-template-columns: 1fr;
+        gap: 2rem;
       }
 
       .project-row {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr auto;
         gap: 1rem;
       }
 
@@ -225,7 +236,63 @@
       }
 
       header h1 {
-        font-size: 4rem;
+        font-size: 3.5rem;
+        margin-bottom: 1.5rem;
+      }
+
+      .gallery-grid {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 1rem;
+        margin-bottom: 3rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      body {
+        padding: 1.5rem 1rem;
+      }
+
+      .top-bar {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.6rem;
+      }
+
+      header h1 {
+        font-size: 2.8rem;
+      }
+
+      .gallery-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .project-row h3 {
+        font-size: 1.3rem;
+      }
+
+      .project-row .link-arrow {
+        font-size: 0.8rem;
+      }
+
+      .resume-btn {
+        width: 100%;
+        max-width: 300px;
+        padding: 1rem;
+        font-size: 0.9rem;
+      }
+      
+      .social-links {
+        justify-content: center;
+      }
+      
+      header {
+        text-align: center;
+        margin-bottom: 3rem;
+      }
+      
+      .about-text {
+        text-align: center;
+        font-size: 1rem;
       }
     }
 
@@ -288,11 +355,11 @@
     </nav>
 
     <header>
-      <span class="section-label">Portfolio</span>
+      <span class="section-label">Creative Portfolio</span>
       <h1>Shahan K.<br>Rahiman</h1>
       <div class="intro-grid">
         <div class="about-text">
-          <p>I build experiences where high-end visuals meet precise mechanics. From Quake-inspired Gameplay, Modern Minimalist Residencies to Luxury Colonial Style Architecture, my work focuses on the intersection of performance and aesthetic beauty.</p>
+          <p>I build experiences where high-end visuals meet precise mechanics. From Quake-inspired Gameplay,Modern Minimalist Architecture to Luxury Colonial Style architecture, my work focuses on the intersection of performance and aesthetic beauty.</p>
           <div class="social-links">
             <a href="https://www.linkedin.com/in/shahan-k-rahiman-445834251/" target="_blank"><i
                 class="fab fa-linkedin"></i></a>
@@ -330,47 +397,47 @@
       <!-- Item 1 -->
       <div class="gallery-item">
         <img src="images/Render.png" alt="Toon Shader Preview">
-        <div class="gallery-caption">Toon Shader & Shadow Ramp</div>
+        <div class="gallery-caption">Luxury Colonial Architecture</div>
       </div>
       <!-- Item 2 -->
       <div class="gallery-item">
         <img src="images/Render 2.png" alt="Vertex Displacement Preview">
-        <div class="gallery-caption">Vertex Displacement in Motion</div>
+        <div class="gallery-caption">Luxury Colonial Architecture</div>
       </div>
       <!-- Item 3 -->
       <div class="gallery-item">
         <img src="images/Render 3.png" alt="Dissolve Preview">
-        <div class="gallery-caption">Procedural Dissolve FX</div>
+        <div class="gallery-caption">Luxury Colonial Architecture</div>
       </div>
       <!-- Item 4 -->
       <div class="gallery-item">
         <img src="images/Render 3_1.png" alt="Gameplay Movement Preview">
-        <div class="gallery-caption">Fluid Movement Systems</div>
+        <div class="gallery-caption">European Style Building</div>
       </div>
       <!-- Item 5 -->
       <div class="gallery-item">
         <img src="images/Render 3_2.png" alt="Gameplay Movement Preview">
-        <div class="gallery-caption">Fluid Movement Systems</div>
+        <div class="gallery-caption">European Style Building</div>
       </div>
       <!-- Item 6 -->
       <div class="gallery-item">
         <img src="images/Render 3_3.png" alt="Gameplay Movement Preview">
-        <div class="gallery-caption">Fluid Movement Systems</div>
+        <div class="gallery-caption">European Style Building</div>
       </div>
       <!-- Item 7 -->
       <div class="gallery-item">
         <img src="images/Result 1.png" alt="Gameplay Movement Preview">
-        <div class="gallery-caption">Fluid Movement Systems</div>
+        <div class="gallery-caption">Modern Minimalist Interior</div>
       </div>
       <!-- Item 8 -->
       <div class="gallery-item">
         <img src="images/Result 2.png" alt="Gameplay Movement Preview">
-        <div class="gallery-caption">Fluid Movement Systems</div>
+        <div class="gallery-caption">Modern Minimalist Interior</div>
       </div>
       <!-- Item 8 -->
       <div class="gallery-item">
         <img src="images/Untitled.png" alt="Gameplay Movement Preview">
-        <div class="gallery-caption">Fluid Movement Systems</div>
+        <div class="gallery-caption">Luxury Colonial style Interior</div>
       </div>
       <!-- Item 9 -->
       <div class="gallery-item">
