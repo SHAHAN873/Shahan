@@ -157,6 +157,46 @@
       .project-row p { display: none; }
       header h1 { font-size: 4rem; }
     }
+
+    /* Modal / Lightbox */
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 999;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.9);
+      justify-content: center;
+      align-items: center;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+    .modal.show {
+      display: flex;
+      opacity: 1;
+    }
+    .modal img {
+      max-width: 90%;
+      max-height: 90%;
+      box-shadow: 0 0 20px rgba(0,0,0,0.5);
+      border-radius: 4px;
+      user-select: none;
+    }
+    .modal-close {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      color: white;
+      font-size: 40px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .modal-close:hover {
+      color: var(--accent);
+    }
   </style>
 </head>
 <body>
@@ -262,5 +302,43 @@
     </div>
   </div>
 
+  <!-- Image Modal -->
+  <div id="imageModal" class="modal">
+    <span class="modal-close" id="closeModal">&times;</span>
+    <img id="modalImg" src="">
+  </div>
+
+  <script>
+    const modal = document.getElementById("imageModal");
+    const modalImg = document.getElementById("modalImg");
+    const closeModal = document.getElementById("closeModal");
+    const galleryItems = document.querySelectorAll(".gallery-item img");
+
+    galleryItems.forEach(img => {
+      img.style.cursor = "pointer";
+      img.addEventListener("click", function() {
+        modal.style.display = "flex";
+        // Small delay to allow CSS transition to trigger correctly
+        setTimeout(() => {
+          modal.classList.add("show");
+        }, 10);
+        modalImg.src = this.src;
+      });
+    });
+
+    function closeImageModal() {
+      modal.classList.remove("show");
+      setTimeout(() => {
+        modal.style.display = "none";
+      }, 300);
+    }
+
+    closeModal.addEventListener("click", closeImageModal);
+    modal.addEventListener("click", function(e) {
+      if (e.target !== modalImg) {
+        closeImageModal();
+      }
+    });
+  </script>
 </body>
 </html>
