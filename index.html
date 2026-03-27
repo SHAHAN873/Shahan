@@ -103,6 +103,62 @@
       font-weight: 700;
     }
 
+    /* Experience List */
+    .experience {
+      margin-bottom: 6rem;
+    }
+
+    .experience-row {
+      display: grid;
+      grid-template-columns: 1fr 2.5fr;
+      gap: 2rem;
+      padding: 2rem 0;
+      border-bottom: 1px solid rgba(139, 0, 0, 0.15);
+      align-items: flex-start;
+    }
+
+    .experience-row:last-child {
+      border-bottom: none;
+    }
+
+    .experience-info h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5rem;
+      color: var(--accent);
+      margin-bottom: 0.3rem;
+    }
+
+    .experience-info .role {
+      font-weight: 600;
+      font-size: 1rem;
+      color: var(--text);
+      margin-bottom: 0.3rem;
+    }
+
+    .experience-info .date {
+      font-size: 0.85rem;
+      color: var(--subtle);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .experience-details p {
+      font-size: 0.95rem;
+      color: var(--text);
+      line-height: 1.7;
+      margin-bottom: 0.8rem;
+    }
+
+    .experience-details ul {
+      color: var(--subtle);
+      font-size: 0.95rem;
+      padding-left: 1.2rem;
+    }
+
+    .experience-details li {
+      margin-bottom: 0.5rem;
+    }
+
     /* Project List */
     .projects {
       margin-bottom: 6rem;
@@ -224,6 +280,12 @@
       .intro-grid {
         grid-template-columns: 1fr;
         gap: 2rem;
+      }
+
+      .experience-row {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        padding: 1.5rem 0;
       }
 
       .project-row {
@@ -355,8 +417,8 @@
     </nav>
 
     <header>
-      <span class="section-label">Portfolio.</span>
-      <h1>Shahan .K.<br>Rahiman</h1>
+      <span class="section-label">Creative Portfolio</span>
+      <h1>Shahan K.<br>Rahiman</h1>
       <div class="intro-grid">
         <div class="about-text">
           <p>I build experiences where high-end visuals meet precise mechanics. From Quake-inspired Gameplay,Modern
@@ -372,6 +434,40 @@
         </div>
       </div>
     </header>
+
+    <!-- Experience Section -->
+    <span class="section-label">Experience</span>
+    <section class="experience">
+      <div class="experience-row">
+        <div class="experience-info">
+          <h3>RexTech Studios</h3>
+          <div class="role">Game Developer Intern</div>
+          <div class="date">June 2025 - July 2025</div>
+        </div>
+        <div class="experience-details">
+          <p>Developing AR/VR applications and animations for games.</p>
+          <ul>
+            <li>AR/VR Development</li>
+            <li>Animation and Rigging</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="experience-row">
+        <div class="experience-info">
+          <h3>Edapt</h3>
+          <div class="role">Web Developer Intern</div>
+          <div class="date">April 2024 - May 2024</div>
+        </div>
+        <div class="experience-details">
+          <p>Maintaining and updating the website.</p>
+          <ul>
+            <li>whatsapp Integration</li>
+            <li>Adding content (Course,Course work)</li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
     <!-- Technical Projects List -->
     <span class="section-label">Code & Systems</span>
@@ -391,11 +487,6 @@
         <h3>Dissolve FX</h3>
         <p>Customizable shader with procedural edge glowing.</p>
         <span class="link-arrow">GITHUB ↗</span>
-      </a>
-       <a href="https://www.fab.com/listings/e3cb6293-e29f-4b94-810a-65daf84ffec9" class="project-row" target="_blank">
-        <h3>Unreal Engine Niagara VFX</h3>
-        <p>Fantasy Portals made using Niagara Particles System.</p>
-        <span class="link-arrow">FAB ↗</span>
       </a>
     </section>
 
