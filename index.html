@@ -242,6 +242,47 @@
       opacity: 1;
     }
 
+    /* Video Section */
+    .video-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      margin-bottom: 6rem;
+    }
+
+    .video-item {
+      width: 100%;
+      aspect-ratio: 16/9;
+      background: #e6ded6;
+      background-position: center;
+      overflow: hidden;
+    }
+
+    .video-item video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .video-card {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .video-info h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5rem;
+      color: var(--accent);
+      margin-bottom: 0.3rem;
+    }
+
+    .video-info p {
+      font-size: 0.95rem;
+      color: var(--text);
+      line-height: 1.6;
+    }
+
     /* Footer */
     .footer-section {
       text-align: center;
@@ -306,6 +347,10 @@
         grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
         gap: 1rem;
         margin-bottom: 3rem;
+      }
+
+      .video-item {
+        aspect-ratio: 16/9;
       }
     }
 
@@ -590,6 +635,33 @@
       <div class="gallery-item">
         <img src="images/VFX7.png" alt="Magic Spell VFX">
         <div class="gallery-caption">Blood Moon VFX</div>
+      </div>
+    </section>
+
+    <!-- Video Showcase -->
+    <span class="section-label">Video Showcase</span>
+    <section class="video-grid">
+      <div class="video-card">
+        <div class="video-item">
+          <video controls>
+            <source src="images/BHop Movement.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="video-info">
+          <h3>BHop Movement Mechanics</h3>
+          <p>A quick demonstration of custom air-strafing and momentum logic.</p>
+        </div>
+      </div>
+      <div class="video-card">
+        <div class="video-item">
+          <video controls>
+            <source src="images/Wall Climbing.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="video-info">
+          <h3>Wall Climbing Mechanics</h3>
+          <p>A quick demonstration of custom wall climbing logic.</p>
+        </div>
       </div>
     </section>
 
